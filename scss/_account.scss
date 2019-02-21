@@ -1,0 +1,38 @@
+/* Latest account Area css
+============================================================================================ */
+
+.account_area{
+    padding: 4rem 0;
+    .account_header{
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $rob;
+        color: $baseColor;
+        margin-bottom: 8px;
+        line-height: 24px;
+    }
+    .detail_col{
+        display: block;
+        h3{
+            padding-left: 1rem;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: $rob;
+            color: $pfont;
+            margin-bottom: 8px;
+            line-height: 24px;
+        }
+    }
+    .genric-btn{
+        margin: 1rem auto;
+        display: inline-block;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+}
+
+
+/* Latest account Area css END
+============================================================================================ */

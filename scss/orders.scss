@@ -1,0 +1,47 @@
+.order_area{
+    padding: 100px 0;
+    .order_list{
+        .col-md-12{
+            padding: 15px;
+        }
+        .each_order{
+            color: $baseColor;
+            display: block;
+            box-shadow: 0 6px 24px -6px transparentize($dip, 0.9);
+            padding: 32px;
+            .order_child_left, .order_child_right{
+                span{
+                    font-size: 12px;
+                    color: $pfont;
+                    font-weight: 400;
+                }
+                h4{
+                    font-size: 16px;
+                    color: $baseColor;
+                    font-weight: 700;
+                }
+                .order-items{
+                    padding-left: 0;
+                    overflow: hidden;
+                    max-height: 52px;
+                    
+                    // li{
+                    //     text-overflow: ellipsis;
+                    //     overflow: hidden; 
+                    //     width: 60px; 
+                    //     height: 1.2em; 
+                    //     white-space: nowrap;
+                    // }
+                    li h5{
+                        font-size: 14px;
+                        color: $pfont;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+                                                    
