@@ -5401,7 +5401,7 @@ h6 {
   color: #777777;
   margin-bottom: 8px;
   line-height: 24px;
-  min-width: 100%;
+  width: 100%;
 }
 .account_area .detail_col .not-verified {
   color: #f44a40;
