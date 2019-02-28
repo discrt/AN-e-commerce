@@ -5375,19 +5375,25 @@ h6 {
 .account_area {
   padding: 4rem 0;
 }
-.account_area .account_header {
+.account_area .account_header, .account_area .system-info {
   font-size: 16px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: #07166D;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   line-height: 24px;
 }
 .account_area .detail_col {
   display: block;
 }
+.account_area .detail_col .agent-img img {
+  height: 100px;
+  width: auto;
+}
+.account_area .detail_col span {
+  margin-right: 16px;
+}
 .account_area .detail_col h3 {
-  padding-left: 1rem;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
@@ -5396,11 +5402,24 @@ h6 {
   margin-bottom: 8px;
   line-height: 24px;
 }
-.account_area .genric-btn {
+.account_area .detail_col .not-verified {
+  color: #f44a40;
+}
+.account_area .detail_col .been-verified {
+  color: #4cd3e3;
+}
+.account_area .detail_col .resend-btn {
+  background: #FCF5EA;
+  margin-left: 16px;
+}
+.account_area .detail_col .delete-btn {
   margin: 1rem auto;
   display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
+}
+.account_area .uneditable {
+  margin-top: 48px;
 }
 
 /* Latest account Area css END

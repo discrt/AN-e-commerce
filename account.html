@@ -198,22 +198,87 @@
 	<!--================Cart Area =================-->
 	<section class="account_area">
 		<div class="container">
-				<div class="account_details">
-						<h3 class="account_header">Account Details</h3>
+				<div class="account_details">							
+						<h2 class="account_header">Account Details</h2>
 						<div class="detail_col">
-							<div class="agent-name">
-								
-								<span>Name:</span>	<h3>John Lovasky</h3>
+							<!--NOt Including this now keep this for later/upgraded version<div class="agent-img">
+							
+									<img src="/img/blog/c5.jpg" alt="Agnet Display Picture">
+							</div>-->
+							<form action="" class="form-horizontal">
+
+								<div class="form-group agent-name">
+										<label for="name" class="col-sm-2 control-label">Name</label>
+										<div class="col-sm-10">
+											<h3>
+												<input class="form-control" id="name" value="John Doe" disabled>
+											</h3>
+										</div>
+									
+								</div>
+								<div class="form-group agent-email">
+										<label for="email" class="col-sm-2 control-label">Email</label>
+										<div class="col-sm-10">
+											<h3>
+												<input class="form-control" id="email"  value="adfas@dsjaf.com" disabled>
+											</h3>
+										</div>
+								</div>
+								<div class="form-group agent-phone">
+										<label for="phone" class="col-sm-2 control-label">Phone Number</label>
+										<div class="col-sm-10">
+											<h3>
+												<input class="form-control" id="phone"  value="9876543210" disabled>
+											</h3>
+										</div>
+								</div>
+								<div class="form-group agent-dob">
+										<label for="email" class="col-sm-2 control-label">DOB</label>
+										<div class="col-sm-10">
+											<h3>
+												<input class="form-control" id="dob"  value="1990-02-28" disabled>
+											</h3>
+										</div>
+								</div>
+								<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+										  <button type="submit" class="btn btn-default" id="save" hidden>Save</button>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+										  <button type="edit" class="btn btn-default" id="edit" onclick="return handleEdit()">Edit</button>
+										</div>
+									  </div>
+							</form>
+							<div class="uneditable">
+								<h2 class="system-info">System Information</h2>
+								<div class="form-group referrel-code col"><!--Agent Ccant edit this-->
+									<span>Agent Referrel Code:</span>
+									<h3>
+										204511
+									</h3>
+								</div>
+								<div class="form-group verification-status col"><!--Agent Ccant edit this-->
+									<span>Verification Status</span>
+									<h3 class="been-verified">Your email has been Verified</h3><!--If Already Verified then Display this-->
+									
+									<h3 class="not-verified">Your email is not Verified</h3><button class="genric-btn link-border resend-btn">Resend Verification Link
+									</button><!--If Not Verified then Display this-->
+								</div>
+								<div class="form-group account-creation col"><!--Agent Ccant edit this-->
+									<span>Account Creatied On</span>
+									<h3>
+										2019-02-17 07:29
+									</h3>
+								</div>
 							</div>
-							<div class="referrel-code">
-								<span>Agent Id:</span>
-								<h3>
-									204511
-								</h3>
-							</div>
-							<a class="genric-btn danger radius" href="index.html">Delete Account</a>
+							
+							
+						
+					</div>
+					<button class="genric-btn danger radius delete-btn" href="index.html">Delete Account</button><!--Redirects to home page-->
 						</div>
-				</div>
 		</div>
 	</section>
 	<!--================End Cart Area =================-->

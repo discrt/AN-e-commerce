@@ -3,18 +3,26 @@
 
 .account_area{
     padding: 4rem 0;
-    .account_header{
+    .account_header, .system-info{
         font-size: 16px;
         font-weight: 700;
         font-family: $rob;
         color: $baseColor;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
         line-height: 24px;
     }
     .detail_col{
         display: block;
+        .agent-img{
+            img{
+                height: 100px;
+                width: auto;
+            }
+        }
+        span{
+            margin-right: 16px;
+        }
         h3{
-            padding-left: 1rem;
             display: inline-block;
             font-size: 14px;
             font-weight: 600;
@@ -23,13 +31,28 @@
             margin-bottom: 8px;
             line-height: 24px;
         }
+        .not-verified{
+            color: #f44a40;
+        }
+        .been-verified{
+            color: #4cd3e3;
+        }
+        .resend-btn{
+            background: $secondaryColor;
+            margin-left: 16px;
+        }
+        .delete-btn{
+            margin: 1rem auto;
+            display: inline-block;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
     }
-    .genric-btn{
-        margin: 1rem auto;
-        display: inline-block;
-        font-size: 14px;
-        text-transform: uppercase;
+    .uneditable{
+        margin-top: 48px;
     }
+    
+    
 
 }
 

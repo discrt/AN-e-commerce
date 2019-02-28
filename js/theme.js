@@ -432,3 +432,16 @@
 	
 
 })(jQuery)
+
+//Gazi's JavaScript for Account Page
+function handleEdit() {
+    document.getElementById('name').disabled = false;
+    document.getElementById('email').disabled = false;
+    document.getElementById('dob').disabled = false;
+    document.getElementById('phone').disabled = false;
+    document.getElementById('edit').hidden = true;
+    document.getElementById('save').hidden = false;
+  
+    return false;
+}
+  
