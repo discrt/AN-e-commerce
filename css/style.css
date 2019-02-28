@@ -5405,6 +5405,7 @@ h6 {
 }
 .account_area .detail_col .not-verified {
   color: #f44a40;
+  display: inline;
 }
 .account_area .detail_col .been-verified {
   color: #4cd3e3;
