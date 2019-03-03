@@ -1,5 +1,7 @@
 ;(function($){
     "use strict"
+
+    
     
     $('.search-box .icons').on('click', function(){
         $('.search-box input').show();
@@ -429,6 +431,20 @@
             ]
         });
     }
+
+    $('.placeholder').on('click', function() {
+        $(this).siblings('input').focus();
+      });
+      $('.form-control').on('focus', function() {
+        $(this).siblings('.placeholder').hide();
+
+      });
+      $('.form-control').on('blur', function() {
+        var $this = $(this);
+        if ($this.val().length == 0)
+          $(this).siblings('.placeholder').show();
+      });
+      $('.placeholder').show();
 	
 
 })(jQuery)
@@ -444,4 +460,6 @@ function handleEdit() {
   
     return false;
 }
+
+
   
